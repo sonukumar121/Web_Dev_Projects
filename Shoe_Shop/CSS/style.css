@@ -1,0 +1,117 @@
+body {
+    background-image: url("https://www.shutterstock.com/image-photo/pair-new-black-sneakers-on-260nw-1477074293.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;         
+    background-position: center;    
+    height:100vh;
+    margin:0;
+    border:4px solid white;
+    
+}
+
+.wrapper .navbar{
+   display:flex; 
+   padding-left:90px;
+   cursor:pointer;
+}
+
+.msg1 h5{
+    color:grey
+}
+
+.msg1 pre{
+    color:black;
+}
+
+.shop{
+    background-color:black;
+  cursor:grab;
+    
+}
+
+.shoe{
+    display:flex;
+    cursor:pointer;
+
+}
+
+
+
+.logo img{
+   padding-inline:630px;
+   padding-top:15px;
+   margin-left:auto;
+}
+
+.logo-row{
+    display:flex;
+    margin-left:1270px;
+    margin-top:-30px;
+    
+}
+
+.logo-row img{
+    height:25px;
+    width:25px;
+    margin-right:25px;
+}
+
+.shoerow2{
+    background-color:white;
+    height:600px;
+    width:auto;
+    margin-top:-20px;
+    display:flex;
+    
+}
+
+.shoerow2 .s1{
+    height:23px;
+    
+    margin-right:20px;
+    
+}
+
+.shoerow2 .s2{
+    height:23px;
+    
+    margin-right:20px;
+    
+}
+
+.shoerow2 .s3{
+    height:23px;
+   
+    margin-right:20px;
+    
+}
+
+.shoerow2 .s4{
+    height:23px;
+   
+    margin-right:20px;
+    
+}
+
+.shoerow2 .s5{
+    height:23px;
+    
+    margin-right:20px;
+    
+}
+
+.shoerow2 .s6{
+    height:23px;
+    
+    margin-right:20px;
+    
+}
+
+.shoerow2 .s7{
+    height:23px;
+    margin-right:20px;
+    
+}
+#tc {
+   padding-right:150px;
+}
