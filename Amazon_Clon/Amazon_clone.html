@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+     .navbarlogo{
+      display:flex;
+      gap:90px;
+      border:3px solid white;
+      background-color:hsl(223, 36%, 70%);
+     }
+
+     .amazonlogo img{
+      margin-top:17px;
+      height:40px;
+      width:100px;
+      
+     }
+
+     .productbar{
+      display:flex;
+      gap:20px;
+      padding-left:9px;
+      background-color:hsl(223, 41%, 70%);
+      cursor:pointer;
+     
+     }
+
+     .background img{
+       height:100%;
+       width:100%
+     }
+
+     .pic1, .pic2, .pic3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  padding-left: 11px;
+  padding-right: 30px;
+  margin-right: 20px;
+  background-color: black;
+  cursor:pointer;
+  border-style: outset;
+  box-shadow:20px;
+}
+
+
+
+
+.pic4, .pic5, .pic6
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  padding-left: 11px;
+  padding-right: 30px;
+  margin-right: 20px;
+  background-color: black;
+  cursor:pointer;
+  /* border:3px solid red; */
+  
+}
+     
+    pic1 .cell, .pic2 .cell, .pic3 .cell {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+.cell img:hover {
+  /* border: 2px solid red; */
+  box-shadow: 0 0 10px white;
+  /* zoom effect */
+  transform: scale(1.08); 
+
+  /* utne second me change ho smoothly */
+  transition: 0.3s;
+}
+
+.pic4 .cell, .pic5 .cell, .pic6 .cell{
+   margin-top: 10px;
+  margin-left: 20px;
+  
+}
+
+.productsugest {
+  display: flex;
+  margin-top: -25%;
+  gap: 30px;
+}
+
+.productsugest2 {
+  display: flex;
+  margin-top: 40px; /* yahan % hatao, 40px ya jitna chaho utna raho */
+  gap: 30px;
+  margin:auto;
+
+  
+}
+
+    .background2{
+      background-color:grey;
+    }
+  
+  .pic4 .cell img, .pic5 .cell img, .pic6 .cell img{
+    height:100%;
+    width:100%;
+    
+  }
+   
+  .cartlogo img{
+    /* border:2px solid red; */
+    padding-top:3px;
+    margin-top:10px;
+    margin-right:40px;
+  }
+
+  .cartlogo img:hover{
+      background-color:rgb(212, 115, 5);
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+      
+   }
+  
+  
+.searchbutton button{
+  background-color:rgb(212, 115, 5);
+}
+  
+ 
+
+
+
+  /* new copiloy */
+body.dark {
+  background: #181818;
+  color: #fff;
+}
+
+body.dark .navbarlogo,
+body.dark .productbar,
+body.dark .pic1, 
+body.dark .pic2, 
+body.dark .pic3, 
+body.dark .pic4, 
+body.dark .pic5, 
+body.dark .pic6 {
+  background-color: #364354 !important;
+  color: #d2cccc;
+}
+
+body.dark input,
+body.dark button {
+  background: #232f3e;
+  color: #fff;
+  border-color: #444;
+}
+  
+
+
+.searchbutton button img{
+  
+}
+
+
+.searchbar input{
+  height:40px;
+  width:230px;
+  margin-top:5px;
+}
+   
+    </style>
+
+
+  
+</head>
+<body>
+ 
+   
+  
+<div class="navbar"> 
+ 
+
+  <button id="darkmode" style="position:fixed;top:10px;right:10px;z-index:999;">🌙</button>
+   <div class="navbarlogo">
+      <div class="amazonlogo">
+        <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo" height="30px" width="80px">
+        
+      </div>
+
+      <div class="delvry">
+          <span>Deliver to SonuKumar</span>
+          <strong><img src="">Bhagalpur 812001</strong>
+      </div>
+       
+<!-- changes -->
+
+    
+       <div class="searchbar">
+         <input type="text" placeholder="Search Amazon">
+       </div>
+
+      <div class="searchbutton">
+       
+        <button> <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Search" height="20"></button>
+      </div>
+
+      <div class="lang">
+       <span><img src="https://th.bing.com/th/id/OIP.YHufaYYtdq8EtHQRPAx_9QHaE8?rs=1&pid=ImgDetMain" height="15px" width="20px">EN</span>
+      </div>
+     
+      <div class="holdername">
+        <span>Hello,Sonu</span>
+        <strong>Account & Lists</strong>
+      </div>
+
+      <div class="return_order">
+       <span>Returns</span>
+       <strong> & Orders</strong>
+      </div>
+
+      <div class="cartlogo">
+        <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" alt="Cart" height="30">
+      </div>
+    </div>
+
+ </div> 
+ 
+ <div class="productbar">
+   <ul><strong>All</strong></ul>
+   <ul>Mx Player</ul>
+   <ul>Sell</ul>
+   <ul>Bestseller</ul>
+   <ul>Today's Deals</ul>
+   <ul>Mobiles</ul>
+   <ul>Prime</ul>
+   <ul>Customer Service</ul>
+   <ul>Fashion</ul>
+   <ul>New Releases</ul>
+   <ul>Amazon Pay</ul>
+ </div>
+
+ <div class="background">
+  
+  <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/devjyoti/GW/Uber/Nov/uber_new_high._CB537689643_.jpg">
+  
+  <div class="productsugest">
+     
+  <div class="pic1"> 
+    
+    <div class="cell">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-372x232----B08RDL6H79._SY232_CB667322346_.jpg" height="40px" width="80px">
+    </div>
+    <div class="cell">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/B08345R1ZW---372x232._SY232_CB667322346_.jpg" height="40px" width="80px">
+    </div>
+
+    <div class="cell">
+       <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/B07G5J5FYP._SY232_CB667322346_.jpg"  height="40px" width="80px">
+    </div>
+    <div class="cell">
+       <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08CPQVLZT._SY232_CB667322346_.jpg" height="40px" width="80px">
+    </div>
+  </div>
+
+
+
+  <div class="pic2">  
+    <div class="cell">
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_furnishings_2._SY232_CB555629502_.jpg" height="40px" width="80px">
+    </div>
+    <div class="cell">
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_decor_1._SY232_CB555629502_.jpg" height="40px" width="80px">
+    </div>
+    <div class="cell">
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_storage_1._SY232_CB555629502_.jpg" height="40px" width="80px">
+    </div>
+    <div class="cell">
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_lighting_2_-_Copy._SY232_CB555629502_.jpg" height="40px" width="80px">
+    </div>
+  </div>
+    
+
+
+<div class="pic3">  
+    <div class="cell">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt._SY232_CB553870684_.jpg" height="40px" width="80px">
+    </div>
+    <div class="cell">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult._SY232_CB553870684_.jpg" height="40px" width="80px">
+    </div>
+    <div class="cell">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise._SY232_CB553870684_.jpg" height="40px" width="80px">
+    </div>
+    <div class="cell">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/MSO/PD3/PC_QuadCard_Zeb_1._SY232_CB570220221_.jpg" height="40px" width="80px">
+    </div>
+</div>
+
+  </div>
+
+ </div>
+
+
+
+
+
+
+
+ <!-- second row of images container-->
+     <div class="background2">
+  
+  <!-- <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/devjyoti/GW/Uber/Nov/uber_new_high._CB537689643_.jpg"> -->
+  
+<div class="productsugest2">
+     
+  <div class="pic4"> 
+    
+    <div class="cell">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF1-372-232._SY232_CB636048992_.jpg"height="40px" width="90px">
+    </div>
+    <div class="cell">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF2-372-232._SY232_CB636048992_.jpg"height="40px" width="80px">
+    </div>
+
+    <div class="cell">
+       <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF4-372-232._SY232_CB636048992_.jpg"height="40px" width="80px">
+    </div>
+    <div class="cell">
+       <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF3-372-232._SY232_CB636048992_.jpg"height="40px" width="80px">
+    </div>
+  </div>
+
+
+
+  <div class="pic5">  
+    <div class="cell">
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_furnishings_2._SY232_CB555629502_.jpg" height="40px" width="80px">
+    </div>
+    <div class="cell">
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_decor_1._SY232_CB555629502_.jpg" height="40px" width="80px">
+    </div>
+    <div class="cell">
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_storage_1._SY232_CB555629502_.jpg" height="40px" width="80px">
+    </div>
+    <div class="cell">
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/2x/372x232_Home_lighting_2_-_Copy._SY232_CB555629502_.jpg" height="40px" width="80px">
+    </div>
+  </div>
+    
+
+
+<div class="pic6">  
+    <div class="cell">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt._SY232_CB553870684_.jpg" height="40px" width="80px">
+    </div>
+    <div class="cell">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult._SY232_CB553870684_.jpg" height="40px" width="80px">
+    </div>
+    <div class="cell">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise._SY232_CB553870684_.jpg" height="40px" width="80px">
+    </div>
+    <div class="cell">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/MSO/PD3/PC_QuadCard_Zeb_1._SY232_CB570220221_.jpg" height="40px" width="80px">
+    </div>
+</div>
+
+  </div>
+ </div>
+ <script>
+  document.querySelector('.cartlogo').onclick = 
+  function() 
+  {
+    alert('Cart clicked!');
+  };
+
+  
+document.getElementById('darkmode').onclick = 
+function() 
+{
+  document.body.classList.toggle('dark');
+};
+
+</script>
+
+<footer style="background:#333;color:white;text-align:center;padding:15px;">
+  &copy; 2025 Sonu | All Rights Reserved
+</footer>
+
+</body>
+</html>
