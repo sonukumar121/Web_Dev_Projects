@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blinkit Clone</title>
+</head>
+
+
+  <body>
+    <div class="container" style="position:relative;">
+
+        <div class="navbar">
+            <div class="blinkitlogo"><img src="https://clevertap.com/wp-content/uploads/2022/08/Blinkit_Coloured_logo402x.png" height="80px" width="190px"></div>
+             <div class="deliveryholder"><strong>Delivery in 9 Minutes</strong></div>
+             <div class="searchbar"><input type="text" placeholder="search items"></div>
+             <div class ="login"><h4>Login</h4></div>
+             <div class="addtocart"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTITK9THAxMCOKB3ov2ZolQPtm6wvJ3OBe67A&s" height="40px" width="40px">
+             <div class="searchlogo"><img src="data:image/png;base64,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" height="10px" width="10px"></div>   
+        </div>
+
+    </div>
+
+
+    <div class="c1">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=1440/layout-engine/2022-05/Group-33704.jpg" height="200px">
+    </div>
+
+    <div class="barimages">
+       <div class="pic1"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/pharmacy-WEB.jpg"></div>
+        <div class="pic1"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"></div>
+        <div class="pic1"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-03/babycare-WEB.jpg"></div>
+    </div>
+
+
+
+
+ <div class="product_list">
+
+<div class="list1">
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-4_9.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-6_5.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-9_3.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-10.png"></div>
+</div>
+
+
+
+<div class="list2">
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-11.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-12.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-13.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-14.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-15.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-16.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-17.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-18.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-19.png"></div>
+    <div class="pic2"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-20.png"></div>
+</div>
+
+
+ </div>  
+ 
+ 
+ <div class="bread_eggs">
+    <h1>Bread & Eggs</h1>
+    <div class="b_e">
+        <div class="pic3"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/6ae62ec2-3b13-4fff-b052-2ff3d4ef2d16.jpg?ts=1726473593">
+      
+         <div id="time"><h4 id="t">10 Mins</h4></div>
+         <div id="product_name"><h3 id="pn">Amul Masti Pouch Card</h3></div>
+         <div id="weight"><h7 id="w">400g</h7></div>
+         <div id="price"><h5 id="p">$35</h5></div>
+         <div id="add"><button id="addb">ADD</button></div>
+        </div>
+
+
+
+        <div class="pic3"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/4a465d8d-f618-4798-a5a8-c687f1c2ee9e.jpg?ts=1708593040">
+         <div id="time"><h4 id="t">10 Mins</h4></div>
+         <div id="product_name"><h3 id="pn">Amul Masti Pouch Card</h3></div>
+         <div id="weight"><h7 id="w">400g</h7></div>
+         <div id="price"><h5 id="p">$35</h5></div>
+         <div id="add"><button id="addb">ADD</button></div>
+        </div>
+        
+
+
+        
+        <div class="pic3"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/e1245bd7-87c8-434e-9754-bb39f6f28669.jpg?ts=1730879758">
+          <div id="time"><h4 id="t">10 Mins</h4></div>
+         <div id="product_name"><h3 id="pn">Amul Masti Pouch Card</h3></div>
+         <div id="weight"><h7 id="w">400g</h7></div>
+         <div id="price"><h5 id="p">$35</h5></div>
+         <div id="add"><button id="addb">ADD</button></div>
+        </div>
+        
+
+
+        <div class="pic3"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/425752a.jpg?ts=1690817258">
+          <div id="time"><h4 id="t">10 Mins</h4></div>
+         <div id="product_name"><h3 id="pn">Amul Masti Pouch Card</h3></div>
+         <div id="weight"><h7 id="w">400g</h7></div>
+         <div id="price"><h5 id="p">$35</h5></div>
+         <div id="add"><button id="addb">ADD</button></div>
+        </div>
+        
+
+
+        <div class="pic3"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/281ed165-b28b-46c5-ba2f-e114a8428a27.jpg?ts=1730879775">
+            <div id="time"><h4 id="t">10 Mins</h4></div>
+         <div id="product_name"><h3 id="pn">Amul Masti Pouch Card</h3></div>
+         <div id="weight"><h7 id="w">400g</h7></div>
+         <div id="price"><h5 id="p">$35</h5></div>
+         <div id="add"><button id="addb">ADD</button></div>
+        </div>
+
+        <div class="pic3"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/7715e993-76c0-4c4c-b6e0-94f9c7b3bca2.jpg?ts=1712325563">
+           <div id="time"><h4 id="t">10 Mins</h4></div>
+         <div id="product_name"><h3 id="pn">Amul Masti Pouch Card</h3></div>
+         <div id="weight"><h7 id="w">400g</h7></div>
+         <div id="price"><h5 id="p">$35</h5></div>
+         <div  id="add"><button id="addb">ADD</button></div>
+        </div>
+        
+
+</div>
+
+
+ </div>
+
+
+ 
+
+
