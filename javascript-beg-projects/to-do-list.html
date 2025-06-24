@@ -26,7 +26,7 @@
         #contain {
             width: 90%;
             max-width: 400px;
-            background-color: white;
+            /* background-color: white; */
             border-radius: 10px;
             padding: 20px;
             box-sizing: border-box;
@@ -77,14 +77,19 @@
             }
         }
     </style>
+    <script defer data-domain="peach-jeanelle-95.tiiny.site"
+        src="https://analytics.tiiny.site/js/plausible.js"></script>
+    <script type="text/javascript" src="https://tiiny.host/ad-script.js"></script>
 </head>
 
 <body>
     <div id="bodyc">
-        <div id="contain" style="background-color: black; color:white">
+        <div id="contain" style="background-color:white; color:black ">
             <h2>To-do-List</h2>
             <div id="task">
-                <input type="text" placeholder="Enter your task">
+                <input id="check" type="checkbox" style="border-radius:30px;visibility: hidden;">
+                <input id="write" type="text" placeholder="Enter your task">
+
                 <button id="button">Add</button>
             </div>
         </div>
@@ -94,6 +99,9 @@
         let button = document.getElementById('button');
 
         button.addEventListener('click', function () {
+            let write = document.getElementById('write');
+            let writetext = write.value;
+
             let contain = document.getElementById('contain');
 
             let divtask = document.createElement('div');
@@ -102,18 +110,35 @@
             divtask.style.marginBottom = '10px';
             divtask.style.flexWrap = 'wrap';
 
+            let checkb = document.createElement('input');
+            checkb.type = "checkbox";
+            checkb.style.backgroundColor="white"
+
             let input = document.createElement('input');
             input.placeholder = "Enter your task";
-            input.style.cssText = "flex:1; border-radius:30px; background-color:#ddd8d8; border:none; padding:10px 15px; box-sizing:border-box;";
+            input.style.cssText = "flex:1; border-radius:30px; background-color:#ddd8d8; border:none; padding:10px 15px; box-sizing:border-box; cursor:default;";
+            input.readOnly = true;
+            // input.disabled=true;
+            input.value = writetext;
+
+
 
             let delbutton = document.createElement('button');
             delbutton.innerText = "Delete";
-            delbutton.style.cssText = "background-color:black; color:white; border-radius:30px; padding:10px 15px; border:none; cursor:pointer; white-space:nowrap;";
+            delbutton.style.cssText = "background-color:black; color:white; border-radius:30px; padding:10px 15px; border:none; cursor:default; white-space:nowrap;";
 
             delbutton.addEventListener('click', function () {
                 divtask.remove();
             });
 
+
+            checkb.addEventListener('click',function(){
+               checkb.style.color="red";
+               input.placeholder="<br>";
+            });
+
+
+            divtask.appendChild(checkb);
             divtask.appendChild(input);
             divtask.appendChild(delbutton);
 
@@ -122,4 +147,4 @@
     </script>
 </body>
 
-</html>
+</html> input placeholder kyu ni kamkarha
