@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do Buttons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background: linear-gradient(to left, rgb(66, 66, 90), rgb(136, 11, 136));
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #bodyc {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 50px;
+        }
+
+        #contain {
+            width: 90%;
+            max-width: 400px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #task {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            border-radius: 30px;
+            background-color: #ddd8d8;
+            border: none;
+            padding: 10px 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 500px) {
+            #task {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            button {
+                width: 100%;
+            }
+
+            input[type="text"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bodyc">
+        <div id="contain" style="background-color: black; color:white">
+            <h2>To-do-List</h2>
+            <div id="task">
+                <input type="text" placeholder="Enter your task">
+                <button id="button">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let button = document.getElementById('button');
+
+        button.addEventListener('click', function () {
+            let contain = document.getElementById('contain');
+
+            let divtask = document.createElement('div');
+            divtask.style.display = 'flex';
+            divtask.style.gap = '10px';
+            divtask.style.marginBottom = '10px';
+            divtask.style.flexWrap = 'wrap';
+
+            let input = document.createElement('input');
+            input.placeholder = "Enter your task";
+            input.style.cssText = "flex:1; border-radius:30px; background-color:#ddd8d8; border:none; padding:10px 15px; box-sizing:border-box;";
+
+            let delbutton = document.createElement('button');
+            delbutton.innerText = "Delete";
+            delbutton.style.cssText = "background-color:black; color:white; border-radius:30px; padding:10px 15px; border:none; cursor:pointer; white-space:nowrap;";
+
+            delbutton.addEventListener('click', function () {
+                divtask.remove();
+            });
+
+            divtask.appendChild(input);
+            divtask.appendChild(delbutton);
+
+            contain.appendChild(divtask);
+        });
+    </script>
+</body>
+
+</html>
