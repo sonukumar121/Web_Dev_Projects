@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+
+        <div id="temp-input"
+            style="height:330px;border-radius:5px;background-color:black;display:flex;flex-direction: column;gap:6px;justify-content:center;align-items: center;width:240px;margin-left: 34%;">
+            <h2
+                style="color:white;text-align: center;color:rgb(39, 110, 39);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                Temperature Converter</h2>
+            <input id="write" type="number" min="0" max="10" placeholder="Enter Temperature"
+                style="width:200px;border-radius:5px;height:20px">
+            <select name="" id="c1" style="width:206px;height:24px">
+                <option value="c11" style="border-radius:13px;">Celcius</option>
+                <option value="f11" style="border-radius:13px;border:none">Farheneit</option>
+
+            </select>
+            <h4 style="text-align: center; color:white;">to</h4>
+
+            <select name="c2" id="" style="width:206px;height:24px">
+                <option value="c22">Farheneit</option>
+                <option value="f22 style=" border-radius:13px;">Celcius</option>
+
+
+            </select>
+            <button id="butn"
+                style="background-color:green; color:white;border-radius:5px;width:206px;cursor: pointer;height:24px">Convert</button>
+            <h2 id="ans">
+
+            </h2>
+        </div>
+
+
+    </div>
+
+    <script>
+        let btn = document.getElementById('butn');
+
+
+        btn.addEventListener('click', function () {
+            let answer = document.getElementById('ans');
+            let wvalue = document.getElementById('write');
+            let value = wvalue.value;//10
+            console.log(value);
+            // console.log(value);
+            let choose = document.getElementById('c1').value;
+            console.log(choose);
+            if (choose == "c11") {
+                // cel->fera
+
+                let fera = (value) * (9 / 5) + 32;
+
+                answer.style.color = "white";
+                // answer.textContent = "Converted: " + fera.toFixed(2);
+                answer.textContent=fera;
+            }
+            else {
+                let celci = (value - 32) * (5 / 9);
+                answer.style.color = "white";
+                answer.textContent = "Converted: " + celci.toFixed(2);
+            }
+        });
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
